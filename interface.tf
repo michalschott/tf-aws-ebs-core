@@ -22,6 +22,6 @@ output "applications-s3-bucket" {
 }
 
 output "application-names" {
-  value       = "${list(aws_elastic_beanstalk_application.app.*.name)}"
+  value       = ["${aws_elastic_beanstalk_application.app.*.name}"]
   description = "Application names (Elastic Beanstalk)."
 }
