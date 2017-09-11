@@ -17,7 +17,7 @@ variable "app_descriptions" {
 }
 
 output "applications-s3-bucket" {
-  value       = "${aws_s3_bucket.apps.name}"
+  value       = "${aws_s3_bucket.apps.id}"
   description = "Name of bucket with application bundles."
 }
 
