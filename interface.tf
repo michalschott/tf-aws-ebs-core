@@ -4,10 +4,12 @@ variable "region" {
 
 variable "customer" {
   description = "Customer name."
+  default     = ""
 }
 
 variable "project" {
   description = "Project name."
+  default     = ""
 }
 
 variable "apps" {

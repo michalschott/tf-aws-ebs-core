@@ -11,8 +11,8 @@ This simple module is designed to:
 |------|-------------|:----:|:-----:|:-----:|
 | app_descriptions | Application descriptions. | string | `<map>` | no |
 | apps | Applications which will be deployed. | string | `<list>` | no |
-| customer | Customer name. | string | - | yes |
-| project | Project name. | string | - | yes |
+| customer | Customer name. | string | `` | no |
+| project | Project name. | string | `` | no |
 | region | AWS region. | string | - | yes |
 
 ## Outputs
