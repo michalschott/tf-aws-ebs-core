@@ -6,6 +6,10 @@ variable "customer" {
   description = "Customer name."
 }
 
+variable "project" {
+  description = "Project name."
+}
+
 variable "apps" {
   default     = []
   description = "Applications which will be deployed."
@@ -24,4 +28,9 @@ output "applications-s3-bucket" {
 output "application-names" {
   value       = ["${aws_elastic_beanstalk_application.app.*.name}"]
   description = "Application names (Elastic Beanstalk)."
+}
+
+output "iam-policy-cloudwatch-arn" {
+  value       = "${aws_iam_policy.cloudwatch.arn}"
+  description = "CLoudwatch policy ARN."
 }

@@ -12,6 +12,7 @@ This simple module is designed to:
 | app_descriptions | Application descriptions. | string | `<map>` | no |
 | apps | Applications which will be deployed. | string | `<list>` | no |
 | customer | Customer name. | string | - | yes |
+| project | Project name. | string | - | yes |
 | region | AWS region. | string | - | yes |
 
 ## Outputs
@@ -20,6 +21,7 @@ This simple module is designed to:
 |------|-------------|
 | application-names | Application names (Elastic Beanstalk). |
 | applications-s3-bucket | Name of bucket with application bundles. |
+| iam-policy-cloudwatch-arn | CLoudwatch policy ARN. |
 
 Example Usage
 ----------------
